@@ -1,0 +1,74 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Heading styling */
+  h1 {
+    color: #4287f5; /* Dark blue */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation styling */
+  nav {
+    background-color: #4287f5; /* Dark blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Paragraph styling */
+  p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  /* Emphasized text styling */
+  em {
+    font-style: italic;
+  }
+  
+  /* Section styling */
+  section {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    color: #4287f5; /* Dark blue */
+    margin-bottom: 10px;
+  }
+  
+  /* List styling */
+  ol,
+  ul {
+    margin-left: 20px;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

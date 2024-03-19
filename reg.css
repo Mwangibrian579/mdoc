@@ -1,0 +1,95 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #4287f5; /* Dark blue */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Form container styling */
+.container {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input styling */
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form input[type="radio"] {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #4287f5; /* Dark blue border */
+  border-radius: 8px;
+  font-size: 16px;
+  display: block;
+}
+
+/* Gender selection styling */
+.gender {
+  margin-bottom: 20px;
+}
+
+.gender label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Form button styling */
+form button {
+  padding: 12px 24px;
+  background-color: #4287f5; /* Dark blue */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+}
+
+form button[type="RESET"] {
+  background-color: #ccc; /* Light gray */
+  margin-left: 10px;
+}
+
+/* Form button hover effect */
+form button:hover {
+  background-color: #1f5bb7; /* Slightly darker blue on hover */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
