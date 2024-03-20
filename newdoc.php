@@ -15,12 +15,13 @@
   </div>
  <div>
   <form action="newdoction.php" method="post">
-    names :<input type="text"name="names"placeholder="names"required></br>
+    Names :<input type="text"name="names"placeholder="names"required></br>
     <br/>
-    profession :<input type ="text"name="profession"placeholder="profession"required></br>
+    Profession :<input type ="text"name="profession"placeholder="profession"required></br>
     <br/>
     licenseno:<input type="number"name="licenseno"Placeholder="Numerals"required></br>
     <br/>
+    Password:<input type="password"name="password"Placeholder="Password"required></br>
     Gender:<br>
     <input type="radio" id="male" name="gender" value="Male">
     <label for="male">MALE</label><br>

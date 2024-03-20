@@ -9,7 +9,7 @@
    <nav>
 
      <a href="Appointment.php">Read and Edit patient data</a>
-     <a href="">Doctor details</a>
+     <a href="Docedit.php">Read and Edit Doctor details</a>
      <a href="newdoc.php">Add doctor</a>
    </nav> 
 </body>
