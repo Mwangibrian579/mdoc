@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>First Aid </title>
-    <link rel="stylesheet" href="first.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for additional styling */
+        /* You can add your additional CSS rules here */
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="patlogin.php">Patient Login</a>
-        <a href="Registration.php">New patient Registration</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="patlogin.php">Patient Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registration.php">New patient Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <h1> Best first Aid remedies before you get to our Hospital;</h1>
-    <p>Most are the times when you are faced with medical emeregencies and situations that need first aid and further medical attention in some cases. We have listed some of the first aid measures that can be taken before one receives medical attention. In the event of medical emergency, situation or accident you can apply the measures listed below before medics arrive or before you get to our hospital </p><br>
-    <ol>
-    <li><h2>Cuts and Wounds</h2></li>
-    <img src="./pictures/cutt.jpeg" alt="Cut wound">
-    <p>In the case of minor cuts or wounds, start by cleaning the area with mild soap and water. Apply an antiseptic ointment and cover the wound with a sterile bandage. For deeper cuts or wounds with heavy bleeding, apply direct pressure using a clean cloth or bandage, and seek medical attention promptly.</p><br>
-<li><h2>Burns</h2></li>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Best First Aid Remedies Before You Get to Our Hospital</h1>
+        <p>Most of the time, you may face medical emergencies and situations that require first aid before further medical attention is available. Here are some first aid measures you can take before receiving medical attention:</p>
+        <ol>
+            <li class="mb-4">
+                <h2>Cuts and Wounds</h2>
+                <img src="./pictures/cutt.jpeg" class="img-fluid mb-2" alt="Cut wound">
+                <p>In the case of minor cuts or wounds, start by cleaning the area with mild soap and water. Apply an antiseptic ointment and cover the wound with a sterile bandage. For deeper cuts or wounds with heavy bleeding, apply direct pressure using a clean cloth or bandage, and seek medical attention promptly.</p>
+            </li>
+            <li><h2>Burns</h2></li>
     <img src="./pictures/burns.jpeg" alt="Burn">
     <p>For minor burns, cool the affected area under running water for at least 10 minutes. Avoid using ice, as it can damage the tissue. Cover the burn with a sterile, non-stick dressing. Seek immediate medical attention for severe burns, especially those involving the face, hands, feet, genitals, or major joints.</p><br>
 <li><h2>Choking</h2></li>
@@ -41,7 +63,12 @@
 <li><h2>Poisoning</h2></li>
     <img src="./pictures/pois.jpeg" alt="Poisoning">
     <p>If someone has ingested a toxic substance, call poison control immediately. Do not induce vomiting unless directed by professionals. If the person is unconscious or having difficulty breathing, perform CPR and seek emergency medical assistance.</p><br>
-</ol>
-<p>Incase of an emergency or an accident you can apply the first aid measures above as you <a href="contacts.php">Contact us</a> for medical assistance</p>
+        </ol>
+        <p class="mt-4">In case of an emergency or accident, you can apply the first aid measures above while contacting us for medical assistance <a href="contacts.php">here</a>.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

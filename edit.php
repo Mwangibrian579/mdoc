@@ -21,33 +21,47 @@ while($row=mysqli_fetch_assoc( $result))
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Update form</title>
-    <link rel="stylesheet" href="reg.css"/>
-  </head>
-  <body>
-    <div>
-
-  </div>
- <div>
-  <form action="update.php?ID=<?php echo $UserID ?>" method="post">
-    Surname:<input type="text"name ="surname"placeholder="surname" value="<?php echo $surname?>"></br>
-   </br>
-    other names :<input type="text"name="othernames"placeholder="othernames" value="<?php echo $othernames?>"></br>
-    <br/>
-    phone no.:<input type ="number"name="phoneno"placeholder="Numerals" value="<?php echo $phoneno?>"></br>
-    <br/>
-    Email:<input type="email"name="email"Placeholder="Optional" value="<?php echo $email?>"></br>
-    <br/>
-    Residence:<input type="text"name="residence"placeholder="residence" value="<?php echo $residence?>"></br>
-    Password:<input type ="password"name="password"placeholder="password" value="<?php echo $password?>"></br>
-    <br/>
-    <button type="update" class="btn" name="update">UPDATE</button>
-    <button type="RESET">RESET</button>
-   </form>
+    <title>Update Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href=""/>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="Admin.php">Home</a>
+</nav>
+<div class="container">
+    <form action="update.php?ID=<?php echo $UserID ?>" method="post">
+        <div class="form-group">
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" class="form-control" placeholder="Surname" value="<?php echo $surname ?>">
+        </div>
+        <div class="form-group">
+            <label for="othernames">Other Names:</label>
+            <input type="text" name="othernames" class="form-control" placeholder="Other Names" value="<?php echo $othernames ?>">
+        </div>
+        <div class="form-group">
+            <label for="phoneno">Phone No.:</label>
+            <input type="number" name="phoneno" class="form-control" placeholder="Phone No." value="<?php echo $phoneno ?>">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="form-control" placeholder="Email" value="<?php echo $email ?>">
+        </div>
+        <div class="form-group">
+            <label for="residence">Residence:</label>
+            <input type="text" name="residence" class="form-control" placeholder="Residence" value="<?php echo $residence ?>">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="form-control" placeholder="Password" value="<?php echo $password ?>">
+        </div>
+        <button type="submit" class="btn btn-primary" name="update">Update</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+    </form>
 </div>
-  </body>
+</body>
 </html>

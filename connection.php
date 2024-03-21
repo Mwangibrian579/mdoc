@@ -8,6 +8,7 @@ $email = $_POST['email'];
 $residence = $_POST['residence'];
 $gender = $_POST['gender'];
 $password = $_POST['password'];
+//$confirmpassword = $_POST['confirmpassword'];
 
 $sql= "INSERT INTO registration (surname, othernames, phoneno, email, residence, gender, password) VALUES(?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_stmt_init($conn);
