@@ -54,9 +54,9 @@
         </p>
         <div class="mb-4">
             <p>Have you registered with us as a patient?<br>
-                <a class="btn btn-primary mr-2" href="Registration.html">Register here</a><br>
+                <a class="btn btn-primary mr-2" href="Registration.php">Register here</a><br>
                 Are you a registered patient?<br>
-                <a class="btn btn-primary" href="patlogin.html">Login here</a>
+                <a class="btn btn-primary" href="patlogin.php">Login here</a>
             </p>
         </div>
     </div>

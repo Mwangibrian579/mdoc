@@ -29,31 +29,34 @@ while($row=mysqli_fetch_assoc( $result))
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="doclogdash.php">Home</a>
+    </nav>
     <div class="container mt-5">
         <form action="updatept.php?ID=<?php echo $UserID ?>" method="post">
             <div class="form-group">
                 <label for="surname">Surname:</label>
-                <input type="text" class="form-control" name="surname" placeholder="Surname" value="<?php echo $surname ?>">
+                <input type="text" class="form-control" name="surname" placeholder="Surname" value="<?php echo $surname ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="othernames">Other Names:</label>
-                <input type="text" class="form-control" name="othernames" placeholder="Other Names" value="<?php echo $othernames ?>">
+                <input type="text" class="form-control" name="othernames" placeholder="Other Names" value="<?php echo $othernames ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="phoneno">Phone No.:</label>
-                <input type="number" class="form-control" name="phoneno" placeholder="Phone Number" value="<?php echo $phoneno ?>">
+                <input type="number" class="form-control" name="phoneno" placeholder="Phone Number" value="<?php echo $phoneno ?>"  disabled>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo $email ?>">
+                <input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo $email ?>"  disabled>
             </div>
             <div class="form-group">
                 <label for="residence">Residence:</label>
-                <input type="text" class="form-control" name="residence" placeholder="Residence" value="<?php echo $residence ?>">
+                <input type="text" class="form-control" name="residence" placeholder="Residence" value="<?php echo $residence ?>" disabled>
             </div>
             <div class="form-group">
-                <label for="treatmentinfo">Treatment Info:</label>
-                <input type="text" class="form-control" name="treatmentinfo" placeholder="Treatment Info" value="<?php echo $treatmentinfo ?>">
+                <label for="treatmentinfo">Treatment Info and Date:</label>
+                <input type="text" class="form-control" name="treatmentinfo" placeholder="Treatment Info" value="treatmentinfo">
             </div>
             <button type="submit" class="btn btn-primary" name="update">Update</button>
             <button type="reset" class="btn btn-secondary">Reset</button>

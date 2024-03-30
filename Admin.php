@@ -21,8 +21,11 @@ body {
         <nav>
             <a class="btn btn-primary mr-2" href="Appointment.php">Read and Edit patient data</a>
             <a class="btn btn-primary mr-2" href="Docedit.php">Read and Edit Doctor details</a>
-            <a class="btn btn-primary" href="newdoc.php">Add doctor</a>
+            <a class="btn btn-primary" href="newdoc.php">Add doctor</a></br>
             <a class="btn btn-primary" href="contactmade.php">Client comments and messages</a>
+            <a class="btn btn-primary" href="admediadvice.php">Add patient medical tips</a>
+            <a class="btn btn-primary" href="mediread.php">Read available medical tips</a>
+            <a class="btn btn-primary" href="appointmentread.php">Pending patient appointments confirmation and viewing</a>
         </nav>
     </div>
 </body>

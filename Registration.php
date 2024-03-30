@@ -28,7 +28,7 @@
     </nav>
 
     <div class="container mt-5">
-        <form name="registration" action="connection.php" method="post" onsubmit="return checkPasswordMatch()">
+        <form name="registration" action="connection.php" method="post" onsubmit="return checkPasswordMatch(); showRegistrationSuccessPopup()">
             <div class="form-group">
                 <label for="surname">Surname:</label>
                 <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" required>
@@ -38,8 +38,9 @@
                 <input type="text" class="form-control" id="othernames" name="othernames" placeholder="Other Names" required>
             </div>
             <div class="form-group">
-                <label for="phoneno">Phone Number:</label>
-                <input type="number" class="form-control" id="phoneno" name="phoneno" placeholder="Phone Number" required>
+    <label for="phoneno">Phone Number:</label>
+    <input type="tel" class="form-control" id="phoneno" name="phoneno" placeholder="Phone Number" required pattern="[0-9]{10}">
+    <small class="form-text text-muted">Please enter a 10-digit phone number.</small>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>

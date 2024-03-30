@@ -6,7 +6,7 @@ if (isset($_GET['Del'])) {
     $UserID = $_GET['Del'];
 
     // Retrieve user information (optional, for confirmation message)
-    $getUserQuery = "SELECT * FROM registration WHERE id = '$UserID'";
+    $getUserQuery = "SELECT * FROM patientappoint WHERE id = '$UserID'";
     $getUserResult = mysqli_query($conn, $getUserQuery);
 
     if ($getUserResult) {
@@ -20,15 +20,15 @@ if (isset($_GET['Del'])) {
     echo '<script>';
     echo 'if (confirm("Are you sure you want to delete the record for ' . (isset($userData['name']) ? $userData['name'] : 'user ID ' . $UserID) . '?")) {';
     echo '  // User confirmed deletion, proceed
-    window.location.href = "delete_record.php?Del=' . $UserID . '";';
+    window.location.href = "delete_recordappoint.php?Del=' . $UserID . '";';
     echo '} else {';
     echo '  // User canceled deletion, redirect back
-    window.location.href = "Appointment.php";';
+    window.location.href = "appointmentread.php";';
     echo '}';
     echo '</script>';
 
 } else {
-    header("location:appointment.php");
+    header("location:appointmentread.php");
 }
 
 ?>

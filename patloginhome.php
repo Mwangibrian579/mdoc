@@ -18,6 +18,9 @@
         .navbar-nav .nav-link:hover {
             color: #f8f9fa; /* Lighter text color on hover */
         }
+
+        /* Background image */
+
     </style>
 </head>
 <body>
@@ -39,17 +42,33 @@
            <a class="nav-link" href="contacts.php">Contact us</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="Doctalk.php">Chat with our Doctors</a>
+           <a class="nav-link" href="contactsD.php">Chat with us</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="Specialistsearch.php">How are you feeling?</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="emergencyalert.php">Emergency</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="appointread.php">Booked appointments Information</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="logout.php">Logout</a>
          </li>
        </ul>
      </div>
    </nav> 
    <div class="container mt-4">
        <p>Welcome to Machakos County General Hospital! We aim at providing quality health. We offer a wide range of services and feel free to choose any of our services through this page or by visiting our healthcare facilities. Your health is our concern.</p>
-   </div>
+      </div>
+      <div>
+        <p>Daily medical tips
+        <?php include 'dailytip.php'; ?>
+        <?php include 'appointment_reminder.php'; ?>
+        <?php include 'medicine_reminder.php'; ?>
+        </p>
+      </div>
    <!-- Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

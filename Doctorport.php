@@ -61,9 +61,6 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.php">Home</a>
-    </nav>
     <div class="container">
         <h1 class="mb-4">Doctor Portal Login</h1>
         <form action="doclog.php" method="post">
