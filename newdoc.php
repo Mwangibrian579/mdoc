@@ -18,7 +18,16 @@
             </div>
             <div class="form-group">
                 <label for="profession">Profession:</label><br>
-                <input type="text" name="profession" class="form-control" placeholder="Enter profession" required>
+                <input type="radio" id="generalDoctor" name="profession" value="general doctor" class="form-check-input">
+                    <label for="generalDoctor" class="form-check-label">General Doctor</label><br>
+                    <input type="radio" id="optician" name="profession" value="optician" class="form-check-input">
+                    <label for="optician" class="form-check-label">Optician</label><br>
+                    <input type="radio" id="pediatrician" name="profession" value="pediatrician" class="form-check-input">
+                    <label for="pediatrician" class="form-check-label">Pediatrician</label><br>
+                    <input type="radio" id="dentist" name="profession" value="dentist" class="form-check-input">
+                    <label for="dentist" class="form-check-label">Dentist</label><br>
+                    <input type="radio" id="gynaecologist" name="profession" value="gynaecologist" class="form-check-input">
+                    <label for="gynaecologist" class="form-check-label">Gynaecologist</label>
             </div>
             <div class="form-group">
                 <label for="licenseno">License No:</label><br>

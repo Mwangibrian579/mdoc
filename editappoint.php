@@ -2,7 +2,7 @@
 
 require_once('db.php');
 $patient_id= $_GET['GetID'];
-$patient_id = isset($_GET['GetID']) && !empty($_GET['GetID']) ? $_GET['GetID'] : '';
+//$patient_id = isset($_GET['GetID']) && !empty($_GET['GetID']) ? $_GET['GetID'] : '';
 $query= "select  * from patientappoint where id='".$patient_id."'";
 $result = mysqli_query($conn,$query);
 
