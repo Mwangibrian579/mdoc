@@ -13,7 +13,7 @@
 <body>
     <div>
         <nav>
-            <a href="index.php" class="btn btn-primary">Home</a>
+            <a href="patloginhome.php" class="btn btn-primary">Home</a>
             <a href="patlogin.php" class="btn btn-primary">Already have an account?</a>
         </nav>
     </div>
@@ -65,5 +65,16 @@
     </div>
     <!-- Bootstrap JS (optional) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+    // Get the current date
+    var today = new Date().toISOString().split('T')[0];
+    // Set the min attribute of the date input field to today
+    document.getElementById("dateofappointment").setAttribute("min", today);
+
+    // Log the current date to check if the script is executed
+    console.log("Today's date:", today);
+</script>
+
 </body>
 </html>

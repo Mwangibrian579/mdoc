@@ -1,7 +1,12 @@
 <?php
 
 require_once('db.php');
-$patient_id= $_GET['GetID'];
+
+if(isset($_GET['Patient']))
+{
+ $patient_id=$_GET['Patient'];
+
+//$_GET['Get'];
 //$patient_id = isset($_GET['GetID']) && !empty($_GET['GetID']) ? $_GET['GetID'] : '';
 $query= "select  * from patientappoint where id='".$patient_id."'";
 $result = mysqli_query($conn,$query);
@@ -21,6 +26,8 @@ $result = mysqli_query($conn,$query);
         $status= $row['status'];
         $approvalstatuscomment= $row["approvalstatuscomment"];
     }
+}
+    
 ?>
 
 
@@ -32,7 +39,6 @@ $result = mysqli_query($conn,$query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Update Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href=""/>
 </head>
 <body>
 <nav class="navbar navbar-dark bg-primary">

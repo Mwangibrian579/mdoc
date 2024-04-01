@@ -56,7 +56,7 @@ while($row=mysqli_fetch_assoc( $result))
             </div>
             <div class="form-group">
                 <label for="treatmentinfo">Treatment Info and Date:</label>
-                <input type="text" class="form-control" name="treatmentinfo" placeholder="Treatment Info" value="treatmentinfo">
+                <input type="text" class="form-control" name="treatmentinfo" placeholder="Treatment Info" value="Treatment Info and Date">
             </div>
             <button type="submit" class="btn btn-primary" name="update">Update</button>
             <button type="reset" class="btn btn-secondary">Reset</button>

@@ -11,17 +11,17 @@ $phoneno = $_POST['phoneno'];
 $email = $_POST['email'];
 $residence = $_POST['residence'];
 $password = $_POST['password'];
-// $appointment = $_POST['appointment'];
+$appointment = $_POST['appointment'];
 $dateofappointment =  $_POST['dateofappointment'];
 $status= $_POST['status'];
 $approvalstatuscomment= $_POST["approvalstatuscomment"];
 
-$query = "update patientappoint set  surname='".$surname."', othernames='".$othernames."', phoneno='".$phoneno."', email='".$email."', residence='".$residence."', dateofappointment='".$dateofappointment."', approvalstatuscomment='".$approvalstatuscomment."' where id='".$patient_id."'" ;
+$query = "update patientappoint set  status='".$status."', approvalstatuscomment='".$approvalstatuscomment."' where id='".$patient_id."'" ;
 $result = mysqli_query($conn,$query);
 
 if($result)
 {
-header("location:editappoint.php");
+header("location:appointmentread.php");
 }
 else{
     echo "please check your query";
@@ -29,7 +29,7 @@ else{
 }
 else
 {
-    header("location:editappoint.php");
+    header("location:appointmentread.php");
 }
 
 ?>

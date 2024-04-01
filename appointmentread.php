@@ -80,7 +80,7 @@ $result = mysqli_query($conn, $query);
                     <td><?php echo $dateofappointment ?></td>
                     <td><?php echo $status ?></td>
                     <td><?php echo $approvalstatuscomment ?></td>
-                    <td><a href="editappoint.php?GetID=<?php echo $patient_id ?>" class="btn btn-primary">Edit</a></td>
+                    <td><a href="editappoint.php?Patient=<?php echo $patient_id?>" class="btn btn-primary">Edit</a></td>
                     <td><a href="deleteappoint.php?Del=<?php echo $patient_id?>" class="btn btn-danger">Delete</a></td>
                 </tr>
                 <?php } ?>
