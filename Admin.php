@@ -26,6 +26,9 @@ body {
             <a class="btn btn-primary" href="admediadvice.php">Add patient medical tips</a>
             <a class="btn btn-primary" href="mediread.php">Read available medical tips</a>
             <a class="btn btn-primary" href="appointmentread.php">Pending patient appointments confirmation and viewing</a>
+            <a class="btn btn-primary" href="patreport.php">Registered patients report</a>
+            <a class="btn btn-primary" href="appointmentreports.php">Approved appointment reports</a>
+            <a class="btn btn-primary" href="docreports.php">Employed doctor reports</a>
         </nav>
     </div>
 </body>

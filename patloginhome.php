@@ -42,13 +42,13 @@
            <a class="nav-link" href="contacts.php">Contact us</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="contactsD.php">Chat with us</a>
+           <a class="nav-link" href="contacts.php">Chat with us</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="Specialistsearch.php">How are you feeling?</a>
+           <a class="nav-link" href="contacts.php">Need help finding a specialist?</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="emergencyalert.php">Emergency</a>
+           <a class="nav-link" href="contacts.php">Emergency</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="appointread.php">Booked appointments Information</a>

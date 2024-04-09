@@ -35,6 +35,9 @@ $result = mysqli_query($conn, $query);
     </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="doclogdash.php">Home</a>
+    </nav>
     <div class="container">
         <h2 class="text-center mb-4">Patient Appointments Data</h2>
         <div class="table-responsive">
@@ -54,8 +57,6 @@ $result = mysqli_query($conn, $query);
                         <th>Date of Appointment</th>
                         <th>Status</th>
                         <th>Approval Status Comment</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,8 +90,6 @@ $result = mysqli_query($conn, $query);
                         <td><?php echo $dateofappointment ?></td>
                         <td><?php echo $status ?></td>
                         <td><?php echo $approvalstatuscomment ?></td>
-                        <td><a href="editappoint.php?GetID=<?php echo $patient_id ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                        <td><a href="deleteappoint.php?Del=<?php echo $patient_id?>" class="btn btn-danger btn-sm">Delete</a></td>
                     </tr>
                     <?php } ?>
                 </tbody>
