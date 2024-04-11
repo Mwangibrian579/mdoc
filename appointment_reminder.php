@@ -1,23 +1,29 @@
-<!-- Appointment Reminder Pop-up -->
-<div id="appointmentReminderModal" class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Appointment Reminder</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Don't forget your appointment! Please make sure to arrive on time.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- JavaScript to trigger the Appointment Reminder Pop-up -->
-<script>
-  $(document).ready(function(){
-    $('#appointmentReminderModal').modal('show');
-  });
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APPOINTMENT REMINDER</title>
+</head>
+<body>
+<div class="card border-primary mb-3" style="max-width: 540px;">
+    <div class="card-header">Appointment Reminder</div>
+    <div class="card-body">
+        <p class='card-text'>
+            <b>Reminder:</b> Don't forget your upcoming appointments. Regularly attending your medical appointments is crucial for your health management.
+        </p>
+        <p class='card-text'>
+            <b>Benefits of Attending Appointments:</b>
+            <ul>
+                <li>Receive timely medical advice and treatment adjustments.</li>
+                <li>Monitor your health condition and progress.</li>
+                <li>Prevent potential health complications through early detection and intervention.</li>
+                <li>Build a strong patient-doctor relationship for better healthcare outcomes.</li>
+            </ul>
+        </p>
+    </div>
+</div>
+</body>
+</html>
+

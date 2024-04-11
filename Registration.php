@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href=""> <!-- Your custom CSS file -->
     <script>
-        function checkPasswordMatch() {
-            var password = document.forms["registration"]["password"].value;
-            var confirmPassword = document.forms["registration"]["confirmpassword"].value;
-            if (password != confirmPassword) {
-                alert("Passwords do not match.");
-                return false;
-            }
-            return true;
+    function checkPasswordMatch() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmpassword").value;
+        
+        console.log("Password: ", password);
+        console.log("Confirm Password: ", confirmPassword);
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
         }
-    </script>
+        return true;
+    }
+</script>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

@@ -17,13 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="First Aid.php">First aid</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="Registration.php">New patient Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.php">Contact us</a>
                     </li>
                 </ul>
             </div>

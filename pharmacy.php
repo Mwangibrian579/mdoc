@@ -12,7 +12,7 @@ $result=mysqli_query($conn,$query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Treatment Data</title>
+    <title>Pharmacy</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -47,9 +47,10 @@ $result=mysqli_query($conn,$query);
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="doclogdash.php">Home</a>
-    </nav>
+    
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="pharmlogdash.php">Home</a>
+    </nav> -->
     <div class="container mt-4">
         <h2 class="mb-4">Patient Data</h2>
         <table class="table">
@@ -63,7 +64,6 @@ $result=mysqli_query($conn,$query);
                     <th>Residence</th>
                     <th>Gender</th>
                     <th>Treatment Info</th>
-                    <th>Treat this patient</th>
                 </tr>
             </thead>
             <tbody>
@@ -92,10 +92,7 @@ $result=mysqli_query($conn,$query);
                   <td><?php echo $row['residence'] ?></td>
                   <td><?php echo $row['gender'] ?></td>
                   <td><?php echo $row['treatmentinfo'] ?></td>
-                  <td><a href="editpt.php?GetID=<?php echo $UserID?>" class="btn"> patient treatment info</a></td>
-
-
-                    </tr>
+                 </tr>
                     <?php
 
                     }

@@ -1,23 +1,29 @@
-<!-- Medicine Dosage Reminder Pop-up -->
-<div id="medicineReminderModal" class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Medicine Dosage Reminder</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>It's time to take your medicine! Please take your dosage at the right time.</p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><strong>Take your medications at  the right time - Healthy Reminder</strong></title>
+</head>
+<body>
+<div class="container mt-4">
+    <div class="card border-primary mb-3" style="max-width: 540px;">
+        <div class="card-header">Medication Reminder</div>
+        <div class="card-body">
+            <p class='card-text'>
+                <b>Reminder:</b> Remember to take your medication doses as prescribed by your healthcare provider. Consistently taking your medication is essential for managing your health condition effectively.
+            </p>
+            <p class='card-text'>
+                <b>Benefits of Taking Medications:</b>
+                <ul>
+                    <li>Control your symptoms and manage your condition.</li>
+                    <li>Prevent disease progression and complications.</li>
+                    <li>Improve your quality of life by maintaining health stability.</li>
+                    <li>Enhance treatment effectiveness and achieve better health outcomes.</li>
+                </ul>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
-
-<!-- JavaScript to trigger the Medicine Dosage Reminder Pop-up -->
-<script>
-  $(document).ready(function(){
-    $('#medicineReminderModal').modal('show');
-  });
-</script>
+</body>
+</html>
