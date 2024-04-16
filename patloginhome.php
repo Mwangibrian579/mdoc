@@ -75,6 +75,9 @@
            <a class="nav-link" href="appointread.php">Booked appointments Information</a>
          </li>
          <li class="nav-item">
+           <a class="nav-link" href="healthtrack.php">My health history</a>
+         </li>
+         <li class="nav-item">
            <a class="nav-link" href="logout.php">Logout</a>
          </li>
        </ul>

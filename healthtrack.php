@@ -1,14 +1,31 @@
 <?php
 require_once('db.php');
-$query = "SELECT * FROM registration";
+
+// Start the session
+session_start();
+
+// Redirect to login page if not logged in
+if (!isset($_SESSION['user_id'])) {
+    header("Location: patlogin.php");
+    exit();
+}
+
+// Get the patient ID from the session
+$patient_id = $_SESSION['user_id'];
+
+// Query to fetch patient appointment data based on the session ID
+$query = "SELECT * FROM registration WHERE id = $patient_id";
+
 $result = mysqli_query($conn, $query);
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch patient data</title>
+    <title>Patient history data</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         nav {
@@ -26,9 +43,9 @@ $result = mysqli_query($conn, $query);
 <body>
     <div class="container">
         <nav>
-            <a href="Admin.php" class="btn btn-primary">Home</a>
+            <a href="Patloginhome.php" class="btn btn-primary">Home</a>
         </nav>
-        <h2>Patient Data</h2>
+        <h2>My health history Data</h2>
         <table class="table table-striped table-bordered">
             <thead class="heading">
                 <tr>
@@ -39,37 +56,30 @@ $result = mysqli_query($conn, $query);
                     <th>Email</th>
                     <th>Residence</th>
                     <th>Gender</th>
-                    <th>Password</th>
-                    <th>Treatment Information</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th>treatmentinfo</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 while ($row = mysqli_fetch_assoc($result)) {
-                    $UserID = $row['id'];
+                    $patient_id= $row['id'];
                     $surname = $row['surname'];
                     $othernames = $row['othernames'];
                     $phoneno = $row['phoneno'];
                     $email = $row['email'];
                     $residence = $row['residence'];
                     $gender = $row['gender'];
-                    $password = $row['password'];
                     $treatmentinfo = $row['treatmentinfo'];
                 ?>
                 <tr>
-                    <td><?php echo $row['id'] ?></td>
-                    <td><?php echo $row['surname'] ?></td>
-                    <td><?php echo $row['othernames'] ?></td>
-                    <td><?php echo $row['phoneno'] ?></td>
-                    <td><?php echo $row['email'] ?></td>
-                    <td><?php echo $row['residence'] ?></td>
-                    <td><?php echo $row['gender'] ?></td>
-                    <td><?php echo $row['password'] ?></td>
-                    <td><?php echo $row['treatmentinfo'] ?></td>
-                    <td><a href="edit.php?GetID=<?php echo $UserID?>" class="btn btn-primary">Edit</a></td>
-                    <td><a href="delete.php?Del=<?php echo $UserID?>" class="btn btn-danger">Delete</a></td>
+                    <td><?php echo $patient_id ?></td>
+                    <td><?php echo $surname ?></td>
+                    <td><?php echo $othernames ?></td>
+                    <td><?php echo $phoneno ?></td>
+                    <td><?php echo $email ?></td>
+                    <td><?php echo $residence ?></td>
+                    <td><?php echo $gender ?></td>
+                    <td><?php echo $treatmentinfo ?></td>
                 </tr>
                 <?php } ?>
             </tbody>

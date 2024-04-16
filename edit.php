@@ -15,6 +15,7 @@ while($row=mysqli_fetch_assoc( $result))
     $residence = $row['residence'];
     $gender = $row['gender'];
     $password = $row['password'];
+    $treatmentinfo = $row['treatmentinfo'];
 }
 
 ?>
@@ -58,6 +59,10 @@ while($row=mysqli_fetch_assoc( $result))
         <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" name="password" class="form-control" placeholder="Password" value="<?php echo $password ?>">
+        </div>
+        <div class="form-group">
+            <label for="treatmentinfo">treatmentinfo:</label>
+            <input type="text" name="treatmentinfo" class="form-control" placeholder="treatmentinfo" value="<?php echo $treatmentinfo ?>">
         </div>
         <button type="submit" class="btn btn-primary" name="update">Update</button>
         <button type="reset" class="btn btn-secondary">Reset</button>

@@ -11,8 +11,9 @@ $phoneno = $_POST['phoneno'];
 $email = $_POST['email'];
 $residence = $_POST['residence'];
 $password = $_POST['password'];
+$treatmentinfo = $_POST['treatmentinfo'];
 
-$query = "update registration set  surname='".$surname."', othernames='".$othernames."', phoneno='".$phoneno."', email='".$email."',residence='".$residence."'  where id='".$UserID."'" ;
+$query = "update registration set  surname='".$surname."', othernames='".$othernames."', phoneno='".$phoneno."', email='".$email."',residence='".$residence."',password='".$password."',treatmentinfo='".$treatmentinfo."'  where id='".$UserID."'" ;
 $result = mysqli_query($conn,$query);
 
 if($result)

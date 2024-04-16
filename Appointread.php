@@ -55,8 +55,6 @@ $result = mysqli_query($conn, $query);
                     <th>Email</th>
                     <th>Residence</th>
                     <th>Gender</th>
-                    <th>Password</th>
-                    <th>treatmentinfo</th>
                     <th>appointment</th>
                     <th>dateofappointment</th>
                     <th>status</th>
@@ -73,8 +71,6 @@ $result = mysqli_query($conn, $query);
                     $email = $row['email'];
                     $residence = $row['residence'];
                     $gender = $row['gender'];
-                    $password = $row['password'];
-                    $treatmentinfo = $row['treatmentinfo'];
                     $appointment = $row['appointment'];
                     $dateofappointment = $row['dateofappointment'];
                     $status= $row['status'];
@@ -88,8 +84,6 @@ $result = mysqli_query($conn, $query);
                     <td><?php echo $email ?></td>
                     <td><?php echo $residence ?></td>
                     <td><?php echo $gender ?></td>
-                    <td><?php echo $password ?></td>
-                    <td><?php echo $treatmentinfo ?></td>
                     <td><?php echo $appointment ?></td>
                     <td><?php echo $dateofappointment ?></td>
                     <td><?php echo $status ?></td>
