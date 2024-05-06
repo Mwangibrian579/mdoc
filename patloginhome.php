@@ -88,7 +88,7 @@
             <div class="col-md-12">
                 <div class="card welcome-card">
                     <div class="card-body">
-                        <p class="welcome-paragraph">Welcome to Machakos County General Hospital! We aim at providing quality health. We offer a wide range of services and feel free to choose any of our services through this page or by visiting our healthcare facilities. Your health is our concern.</p>
+                        <p class="welcome-paragraph">Welcome to Machakos County General Hospital! We aim at providing quality health. We offer a wide range of services and feel free to choose any of our services through this page or by visiting our healthcare facilities. Your health is our concern. In the event that you contact us through the available methods we will get back to you through the entered email. You can also directly <strong>Call us</strong> through <strong> <em>453543 or 43535345</em> </strong>in the event of an <em>Emergency</em>.</p>
                     </div>
                 </div>
             </div>
